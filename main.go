@@ -31,11 +31,14 @@ func main() {
 	fmt.Println("\nPlease enter your email: ")
 	fmt.Scan(&email)
 
+	fmt.Println("\nPlease enter number of tickets you want: ")
+	fmt.Scan(&userTickets)
 
-	userTickets = 12
+	remainingTickets = remainingTickets - userTickets
+
 	fmt.Printf("A new user with the following details %v %v and email %v wants to book %v tickets.\n", firstName, lastName, email, userTickets)
 
 	fmt.Printf("Thank you %v for booking with us. You order has been received and details will be emailed to you at %v.\n", firstName,email)
-
+	fmt.Printf("remaining tickets %v")
 }
 

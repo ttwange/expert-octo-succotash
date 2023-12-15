@@ -17,15 +17,23 @@ func main() {
 	fmt.Println((conferenceName))
 
 
-	var userName string
+	var firstName string
+	var lastName string
+	var email string
 	var userTickets int
  //ask user for the name and ticket
-	//fmt.Scan(userName)
-	fmt.Println(remainingTickets)
-	fmt.Println(&remainingTickets)
+ 	fmt.Println("\nPlease enter your first Name: ")
+	fmt.Scan(&firstName)
+
+	fmt.Println("\nPlease enter your last Name: ")
+	fmt.Scan(&lastName)
+
+	fmt.Println("\nPlease enter your email: ")
+	fmt.Scan(&email)
+
 
 	userTickets = 12
-	fmt.Printf("user %v booked %v tickets.\n", userName,userTickets)
+	fmt.Printf("A new user with the following details %v %v and email %v wants to book %v tickets.\n", firstName, lastName, email, userTickets)
 
 }
 

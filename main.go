@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"golang.org/x/vuln/scan"
+)
 
 func main() {
 	var conferenceName = "Go Conference"
@@ -20,8 +24,8 @@ func main() {
 	var userName string
 	var userTickets int
 // ask user for the name and ticket
+fmt.Scan(userName)
 
-userName = "Tim"
 userTickets = 12
 fmt.Printf("user %v booked %v tickets.\n", userName,userTickets)
 

@@ -15,5 +15,15 @@ func main() {
 	fmt.Printf("We have a total of %v and we have %v remaining\n", conferenceTickets, remainingTickets)
 	
 	fmt.Println((conferenceName))
+
+
+	var userName string
+	var userTickets int
+// ask user for the name and ticket
+
+userName = "Tim"
+userTickets = 12
+fmt.Printf("user %v booked %v tickets.\n", userName,userTickets)
+
 }
 

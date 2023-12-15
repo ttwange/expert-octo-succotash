@@ -35,5 +35,7 @@ func main() {
 	userTickets = 12
 	fmt.Printf("A new user with the following details %v %v and email %v wants to book %v tickets.\n", firstName, lastName, email, userTickets)
 
+	fmt.Printf("Thank you %v for booking with us. You order has been received and details will be emailed to you at %v.\n", firstName,email)
+
 }
 
